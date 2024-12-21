@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewProperty">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/purple"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/appbar"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:paddingVertical="20sp"
+                android:paddingHorizontal="15sp"/>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@id/appbar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20sp"
+                android:layout_marginTop="15sp"
+                android:layout_marginBottom="5sp"
+                android:text="@string/address"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/edit_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20sp"
+                android:autofillHints=""
+                android:hint="@string/address"
+                android:inputType="textPersonName"
+                android:textSize="24sp"
+                tools:ignore="LabelFor" />
+
+            <TextView
+                android:id="@+id/suburb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20sp"
+                android:layout_marginVertical="5sp"
+                android:text="@string/suburb"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/edit_suburb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20sp"
+                android:autofillHints=""
+                android:hint="@string/suburb"
+                android:inputType="textPersonName"
+                android:textSize="24sp"
+                tools:ignore="LabelFor" />
+
+            <TextView
+                android:id="@+id/state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20sp"
+                android:layout_marginVertical="5sp"
+                android:text="@string/state"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/edit_state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20sp"
+                android:autofillHints=""
+                android:hint="@string/state"
+                android:inputType="textPersonName"
+                android:textSize="24sp"
+                tools:ignore="LabelFor" />
+
+            <TextView
+                android:id="@+id/postcode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20sp"
+                android:layout_marginVertical="5sp"
+                android:text="@string/postcode"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/edit_postcode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20sp"
+                android:autofillHints=""
+                android:hint="@string/postcode"
+                android:inputType="numberDecimal"
+                android:textSize="24sp"/>
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20sp"
+                android:layout_marginVertical="5sp"
+                android:text="@string/price"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/edit_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20sp"
+                android:autofillHints=""
+                android:hint="@string/price"
+                android:inputType="numberDecimal"
+                android:textSize="24sp"
+                tools:ignore="LabelFor" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20sp"
+                android:layout_marginTop="20sp"
+                android:text="@string/new_property" />
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

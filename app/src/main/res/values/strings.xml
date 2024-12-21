@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">assesment</string>
+    <string name="appbar">PropertyShop</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="address">Address</string>
+    <string name="suburb">Suburb</string>
+    <string name="state">State</string>
+    <string name="postcode">Postcode</string>
+    <string name="price">Price</string>
+    <string name="new_property">NEW PROPERTY</string>
+    <string name="save">SAVE</string>
+</resources>
